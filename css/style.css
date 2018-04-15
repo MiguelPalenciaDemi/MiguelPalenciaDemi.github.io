@@ -511,6 +511,11 @@ display: flex;
 /*Tablet*/
 @media (min-width:768px) and (max-width:1025px)
 {
+	
+	.noPhone
+	{
+		display:none;
+	}
 	.box
 	{
 		display: none;
@@ -614,6 +619,10 @@ display: flex;
 /*Phone*/
 @media (max-width:767px)
 {
+	.noPhone
+	{
+		display:none;
+	}
 
 	.box
 	{
