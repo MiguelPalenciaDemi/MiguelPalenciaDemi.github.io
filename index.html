@@ -1,0 +1,215 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Título</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="">
+    <link href="https://fonts.googleapis.com/css?family=Khand:400,600&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <script src="js/code.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    
+
+<body onload="Init();">
+
+<div class="navMenuContainer">
+	<div class="navMenu">
+		<div class="itemMenu" section="job" >Job</div>
+		<div class="itemMenu" section="projects" >Projects</div>
+		<div class="itemMenu" section="others" >Others</div>	
+	</div>
+</div>    
+<div class="content">
+	 <div class="portada">
+    	<div class="Maintitle">Miguel Palencia</div>
+    	<div class="Mainsubtitle">A little programmer</div>
+    	<!-- <div class="logo"></div> -->
+    </div>
+    <div class="timeline">
+    	<div class="timelineTitle" id="job">My jobs</div>
+    	<div class="itemJob">
+    		<div class="imgJob" style="background-image: url(media/openmags.png);"></div>
+    		<div class="textJob">
+    			<div class="titleJob"> Web Designer/Developer</div>
+    			<div class="descJob">I work at OpenMags, company who designs magazines and has created a platform that helps you to create your own web page by templates. I programm some of these templates. I try to offer all the posibilities to customize the web</div>	
+    		</div>  		
+    	</div>
+    	
+    	<!-- <div class="timelineTitle">University</div>
+    	<div class="itemJob">
+    		
+    		<div class="textJob">
+    			<div class="titleJob"> Design and developer of Videogames (Programmer)</div>
+    			<div class="descJob">I am EsNE student. There I learn to develop videogames and apps to different platforms. I'm specialised on code, but I have art skills and recieve some design tips</div>	
+    		</div>  		
+
+    		<div class="imgJob" style="background-image: url(media/esne.jpg);"></div>
+    	</div> -->
+
+
+
+    </div>
+
+<div class="timelineTitle" id="projects">Current Project</div>
+
+    <div class="CurrentProjectContainer">
+		<div class="backgroundCurrentProject">
+			<div class="bgCurrentProject" style="background-image: url(media/interior.jpg);"></div>
+			<div class="bgCurrentProject" style="background-image: url(media/exterior.jpg); /*left: 100%*/;"></div>			
+		</div>
+		<div class="itemJob">
+    		<div class="imgJob"  id="Relight" style="background-image: url(media/niña.jpg);"></div>
+    		<div class="textJob">
+    			<div class="titleJob"> Relight</div>
+    			<div class="descJob">Relight is our EGP. Puzzle 3D Game. You are the Moon's dougther, her mother is losing its power. You must resolve the light puzzles to  give the light back to the Moon. Unreal Engine</div>	
+    		</div>  		
+    	</div>
+	</div>
+
+
+<div class="timelineTitle">Projects</div>
+    <div  class="projects">
+    		<div class="Itemsprojects">
+    			
+    			<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url( media/phill.jpg);"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject"> Project Phil</div>
+		    			<div class="descProject">It's an Android game where we have to help our little friend, Phil, to repair its spaceship. You must resolve the platform puzzles to achieve the goal.<div class="button"><a class="button_span"href="https://play.google.com/store/apps/details?id=com.MadClock.ProjectPhil1&hl=es" target="_blank" >Download!</a></div></div>	
+		    		</div>  		
+    			</div>
+
+		    	<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url(media/naruto.jpg);"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject"> Naruto Runner</div>
+		    			<div class="descProject">Runner. Naruto is so hungry, that means he wants to eat, that means Ramen. Run and Jump as fast you can till the end!
+		    				<div class="button"><a class="button_span"href="naruto/index.html" target="_blank" >Play!</a></div></div>	
+		    		</div>  		
+		    	</div>
+
+		    	<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url(media/choco.png);"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject"> Chocobo Runner</div>
+		    			<div class="descProject">I'm working on a infinite runner based on Final Fantasy World. Android</div>	
+		    		</div>  		
+		    	</div>
+
+		    	<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url(media/XO.png);height: 188px;"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject">XO</div>
+		    			<div class="descProject">It's a simple Tic-Tac-Toe. Play it while you are waiting the bus, on class (I didn't say that) or just for fun! </div>	
+		    		</div>  		
+		    	</div>
+
+		    	<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url(media/way.png);"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject"> No Way Out</div>
+		    			<div class="descProject">Survival Horror. You are alone and confused in the middle of a forest. You were looking into your mother death. Unreal Engine </div>	
+		    		</div>  		
+		    	</div>
+
+		    	<div class="itemProject">
+		    		<div class="imgProject" style="background-image: url(media/slender.jpg);"></div>
+		    		<div class="textProject">
+		    			<div class="titleProject"> The Forest</div>
+		    			<div class="descProject">A Survival Horror game based on the Slender's legend. You must find all the items before the monster finds you.</div>	
+		    		</div>  		
+		    	</div>    	
+		    	
+
+	    		</div>
+	    		<div class="Sliderprojects" id="slider"></div>
+	</div>
+
+
+
+
+    	<div class="timelineTitle">Not everything is programming...<br><br></div>
+    	<div class="timelineTitle" id="others">Cosplays</div>
+			<div class="galleryContainer">
+				<div class="gallery">
+					
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">	    			
+			    			<div class="imageGallery" style="background-image: url(media/jean.jpg);"></div>
+							<div class="textGallery"> Attack On Titans<br>
+			    			Jean-Miguel Palencia<br>
+			    			Sasha-Ainoa Represa</div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery" >
+			    			<div class="imageGallery" style="background-image: url(media/kakashi.jpg);"></div>
+							<div class="textGallery"> Naruto<br>
+			    			Kakashi Hatake-Miguel Palencia<br></div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">
+			    			<div class="imageGallery"  style="background-image: url(media/kakashi2.jpg);"></div>
+							<div class="textGallery"> Naruto<br>
+			    			Kakashi Hatake-Miguel Palencia<br>
+			    			Naruko-Ainoa Represa</div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">
+			    			<div class="imageGallery"  style="background-image: url(media/seto.jpg);"></div>
+							<div class="textGallery"> MekakuCity Actors<br>
+			    			Seto Kousuke-Miguel Palencia<br></div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">
+			    			<div class="imageGallery" style="background-image: url(media/axel1.jpg);"></div>
+							<div class="textGallery"> Kingdom Hearts<br>
+			    			Axel-Miguel Palencia<br></div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">
+			    			<div class="imageGallery"  style="background-image: url(media/axel2.jpg);"></div>
+							<div class="textGallery"> Kingdom Hearts<br>
+			    			Axel-Miguel Palencia<br></div>
+		    			</div>
+					</div>
+
+					<div class="ItemGalleryContainer">
+						<div class="ItemGallery">
+			    			<div class="imageGallery" style="background-image: url(media/ignis.jpg);"></div>
+							<div class="textGallery"> Final Fantasy XV<br>
+			    			Ignis-Miguel Palencia<br>
+			    			Prompto-Ainoa Represa</div>
+		    			</div>
+					</div>  		
+	    		</div>
+			</div>
+    	
+
+    	<div class="box">
+    		<div class="limit"></div>
+    		<div class="textBox">CONTACT<br>
+				miguelpalenciademi@gmail.com<br>
+				+34 630323420</div>
+	</div>
+	
+</div>
+</div>
+   
+
+</body>
+
+</html>
+
