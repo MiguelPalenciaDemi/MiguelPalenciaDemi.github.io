@@ -522,7 +522,8 @@ display: flex;
 	
 	.navMenuContainer
 	{
-		width: : 60%;
+		width: 60%;
+		height: 70%;
 	}
 	.projects
 	{
@@ -625,7 +626,8 @@ display: flex;
 	
 	.navMenuContainer
 	{
-		width: : 60%;
+		width: 60%;
+		height: 70px;
 	}
 	.projects
 	{
