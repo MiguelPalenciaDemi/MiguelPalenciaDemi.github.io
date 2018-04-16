@@ -475,7 +475,7 @@ display: flex;
 	right: -24%;
 	top: 50%;
 	background-color: #424242;
-/* 	border-radius: 20px; */
+	border-radius: 20px;
 	text-align: center;
 	color: white;
 	font-size: 2em;
@@ -502,6 +502,7 @@ display: flex;
 
 .textBox
 {
+	background-color: #424242;
 	width: 100%;
 	left: 6%;
 	display: flex;
