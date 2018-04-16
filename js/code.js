@@ -81,17 +81,17 @@ function startSlider()
 function SetMenuActions ()
 {
 	
-	$(".itemMenu").on('click', function(event) {
-		console.log(event);
-    var id = event.currentTarget.attributes[1].value;
-    var target = $('#'+id);
-    console.log(target);
-    if( target.length ) {
-    	console.log(target);
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
+	$(".itemMenu").on('click', function(event)
+	{
+	    console.log(event);
+	    var id = event.currentTarget.attributes[1].value;
+	    var target = $('#'+id);	    
+	    if( target.length )
+	    {
+		event.preventDefault();
+		$('html, body').stop().animate({
+		    scrollTop: target.offset().top
+		}, 1000);
+	    }
+	});
 }
