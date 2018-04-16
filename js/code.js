@@ -5,9 +5,10 @@ function Init ()
 {
 	SliderHTML();
 	startSlider();
-	SetMenuActions();
-	console.log("yey");
+	SetMenuActions();	
 }
+
+//Creamos el slider utilizando las imágenes que se encuentran dentro del array
 function SliderHTML()
 {
 	var listDefaultImgs=[  "media/phill.jpg","media/choco.png","media/marine.jpg","media/slender.jpg","media/way.png"];
@@ -76,6 +77,7 @@ function startSlider()
 	}, 3000);	
 };
 
+//Da los comportamientos correspondientes al menú
 function SetMenuActions ()
 {
 	
