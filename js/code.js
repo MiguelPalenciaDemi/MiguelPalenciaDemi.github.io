@@ -20,16 +20,14 @@ function SliderHTML()
 	for(let i=0;i< totalDefImgs;i++)
 	{
 		newHTML += '<div id="'+i+'" class="imgContainerSlider" style="';
-		if(i == 0){
+		if(i == 0)
+		{
 			newHTML+='left:50%;';
 		}
 		newHTML += '"><div class="imgSlider"  style="background-image:url('+listDefaultImgs[currentDefImage]+');">';
-		
-
-		
+	
 		newHTML+='</div></div>';
 		currentDefImage++;
-
 		if(currentDefImage==totalDefImgs)
 			currentDefImage=0;
 
@@ -59,9 +57,7 @@ function startSlider()
 	    $(this).css("left", "0");
 	 
 	  });
-		
-		
-
+	  
 		This.currentImage++;
 		if(This.currentImage>=This.numImages)
 			This.currentImage=0;
