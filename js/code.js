@@ -5,7 +5,9 @@ function Init ()
 {
 	SliderHTML();
 	startSlider();
-	SetMenuActions();	
+	$('.navMenuContainer').fadeIn(1000).css("display","flex");
+	$('.content').fadeIn(1000);
+	//SetMenuActions();	
 }
 
 //Creamos el slider utilizando las imágenes que se encuentran dentro del array
@@ -90,4 +92,13 @@ function SetMenuActions ()
 		}, 1000);
 	    }
 	});
+	$(".ItemGallery").on('click', function(event)
+	{
+		if($(this).hasClass("ItemGalleryClick"))
+			$(this).removeClass("ItemGalleryClick");
+		else
+			$(this).addClass("ItemGalleryClick");
+	})
+
+
 }

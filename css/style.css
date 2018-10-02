@@ -17,6 +17,7 @@ body
 
 .content 
 {
+	display: none;
 	height: 100%;
 }
 
@@ -325,7 +326,7 @@ display: flex;
 
 }
 
-.ItemGallery:hover
+.ItemGalleryClick
 {
 	transform: perspective(600px) rotateY(-180deg) translateX(100%);
 }
@@ -413,7 +414,10 @@ display: flex;
     80% { top:-100%;}   
     100% { top:0 }    
 }
-
+a{
+	text-decoration: none;
+	color: white;
+}
 
 .navMenuContainer
 {
@@ -426,7 +430,7 @@ display: flex;
 	
 	border-radius: 12PX;
 	z-index: 5;
-	display: flex;
+	display: none;
 	justify-content: center;
 }
 
