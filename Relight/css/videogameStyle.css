@@ -1,0 +1,213 @@
+
+html,body{
+	height: 100%;
+
+}
+
+body
+{
+	font-family: 'Khand', sans-serif;
+	overflow-x:hidden;
+	margin:0;
+	background-color: black;
+	color: white;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.content 
+{
+	height: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #000000bf;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: white;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color:white;
+}
+
+div::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+	background-color: #000000bf;
+}
+
+div::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: white;
+}
+
+div::-webkit-scrollbar-thumb
+{
+	background-color:white;
+}
+
+.page
+{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	/*flex-direction: column;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	background-image: url("../media/RelightGIF.gif");
+}
+
+
+
+
+.navMenuContainer
+{
+	height: 50px;
+	width: 30%;
+	position: fixed;
+	top: 0;
+	
+	background-color: #42424296;
+	
+	border-radius: 12PX;
+	z-index: 5;
+	display: none;
+	justify-content: center;
+}
+
+.navMenu
+{
+	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	
+
+}
+
+.itemMenu
+{
+	width: 30%;
+	height: 100%;
+	color: white;
+	font-size: 2em;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12PX;
+    perspective: 1000px;
+
+    transition: all 1s ease;
+
+}
+
+.itemMenu:hover
+{
+
+	background-color: #060606b5;
+	width: 40%;
+
+
+}
+
+
+.box
+{
+	position: fixed;
+	display: flex;
+	right: -24%;
+	top: 50%;
+	background-color: #424242;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	width: 25%;
+	transition: all 2s ease;
+	text-align: center;
+}
+.limit
+{
+	background-color: white;
+	width: 6%;
+	height: inherit;
+	border-radius: 20px 0 0 20px;
+}
+
+.box:hover
+{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	text-align: center;
+	
+}
+
+.textBox
+{
+	background-color: #424242;
+	width: 100%;
+	left: 6%;
+	display: flex;
+	justify-content: center;
+}
+
+/*Tablet*/
+@media (min-width:768px) and (max-width:1025px)
+{
+	
+	
+	.page
+	{
+		height: 100%;
+
+	}
+
+	.topic
+	{
+		height: 20%;
+	}
+	.slider
+	{
+		height: 50%;
+	}
+}
+
+/*Phone*/
+@media (max-width:767px)
+{
+	.page
+	{
+		height: 100%;
+
+	}
+
+	.topic
+	{
+		height: 20%;
+	}
+	.slider
+	{
+		height: 50%;
+	}
+}
