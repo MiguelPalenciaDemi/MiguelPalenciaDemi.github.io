@@ -1,6 +1,6 @@
 
 var player = {
-    position: {x: 200, y: 100},
+    position: {x: 100, y: 100},
     width: 0.24,
     height: 0.20,
     type:'player',
@@ -9,6 +9,7 @@ var player = {
     lives:5,
     dead:false,
     win:false,
+    moving:false,
     
 
 
@@ -29,18 +30,19 @@ var player = {
         img: null,
         timePerFrame: 1/24,
         currentFrametime: 0,
-        frameWidth: 49.25,
+        frameWidth: 45,
         frameHeight: 39,
         actualX: 0,
-        actualY: 0,
+        actualY: 39,
 
         Update: function (deltaTime) {
             this.currentFrametime += deltaTime;
             if (this.currentFrametime >= this.timePerFrame)
             {
+
                 // update the animation frame
                 this.actualX += this.frameWidth;
-                if (this.actualX > 148)
+                if (this.actualX > 179)
                 {
                     this.actualX = 0;
                     
@@ -60,7 +62,7 @@ var player = {
 
     physicsInfo: {
         density: 5,
-        fixedRotation: false,
+        fixedRotation: true,
         linearDamping: 10 ,
         user_data: player,
         type: b2Body.b2_dynamicBody,
@@ -79,6 +81,7 @@ var player = {
             this.width, this.height, this.physicsInfo);
 
         this.body.SetUserData(this);
+//        this.body.preventRotation = true;
         this.score=0;
         //this.body.setFriction( 0 )
         //this.body.friction =   0.25f;
@@ -114,22 +117,37 @@ var player = {
             this.ApplyVelocity(new b2Vec2(0, this.jumpForce));
             this.moveUp = false;
         }
+
+        if(this.moving)        
+            this.animation.actualY = 0;
+        
+         else        
+            this.animation.actualY = 39;
+        
         
         
         if(this.position.y>500)//Si nos caemos recolocamos y restamos una vida
         {
            
-            this.body.SetPosition({x:2,y:0.2});
+           console.log(olderChunkPosition);
+            this.body.SetPosition({x:respawnX/scale,y:0.5});
             bodyPosition= this.body.GetPosition();
             this.position.x= bodyPosition.x*scale;
-            this.position.y= Math.abs((bodyPosition.y*scale)-canvas.height);
+            this.position.y= Math.abs((bodyPosition.y*scale)+canvas.height);
             
             this.lives--;
+
+            console.log(this.canJump);
+            if(!this.canJump){
+                this.canJump=true;
+                console.log("heeeey");
+                ChangeGravity();
+            }
 
             if(this.lives<=0)            
                this.dead=true;
             else
-                this.score=0;
+                this.score-=50;
            
         }
 
@@ -190,7 +208,7 @@ var player = {
     {
         this.score-=5;
         this.body.ApplyImpulse(new b2Vec2(2,40*this.reverse),this.body.GetPosition())
-        this.isTop = true;
+        
         this.canJump=true;
         // new b2Vec2(5, 20*this.reverse)
     }

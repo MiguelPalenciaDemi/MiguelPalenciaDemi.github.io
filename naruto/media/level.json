@@ -1,0 +1,137 @@
+
+var levelInfo = {
+    "easy_chunks" : [
+        {
+            "id": 0,
+            "platforms": [
+                {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},                
+                {"x": 200,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 500,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 600,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2},
+                
+                {"x": 0,  "y": 0, "width":0.5, "height": 0.2},                
+                {"x": 100,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 200,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2}
+            ],
+            "ramens":[
+                 {"x": 400,  "y": 50, "width":0.2, "height": 0.2},
+                 {"x": 700,  "y": 50, "width":0.2, "height": 0.2}
+            ]
+        },
+        {
+            "id": 1,
+            "platforms": [
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},                 
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2},
+                
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},                 
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 200,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 300,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 700,  "y": 0, "width":0.0, "height": 0.0}
+            ],
+            "ramens":[
+                 {"x": 300,  "y": 50, "width":0.2, "height": 0.2},
+                 {"x": 400,  "y": 50, "width":0.2, "height": 0.2}
+            ]
+        },
+        {
+            "id": 2,
+            "platforms": [
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},                 
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2},
+                
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.7}
+            ],
+            "ramens":[
+                 {"x": 600,  "y": 50, "width":0.2, "height": 0.2},
+                 {"x": 400,  "y": 50, "width":0.2, "height": 0.2}
+            ]
+        },
+        
+        {
+            "id": 3,
+            "platforms": [
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2},
+                
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 300,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 400,  "y": 0, "width":0.5, "height": 0.7},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2}
+            ],
+            "ramens":[
+                 {"x": 400,  "y": 50, "width":0.2, "height": 0.2},
+                 {"x": 700,  "y": 50, "width":0.2, "height": 0.2}
+            ]
+        },
+        
+        {
+            "id": 4,
+            "platforms": [
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 300,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 400,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2},
+                
+                 {"x": 0,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 100,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 200,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 300,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 400,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 500,  "y": 0, "width":0.5, "height": 0.2},
+                {"x": 600,  "y": 0, "width":0.0, "height": 0.0},
+                {"x": 700,  "y": 0, "width":0.5, "height": 0.2}
+            ],
+            "ramens":[
+                 {"x": 500,  "y": 50, "width":0.2, "height": 0.2}
+                 
+            ]
+        }
+    ]
+}

@@ -12,10 +12,11 @@ function NewRamen (options)
         toDelete:false,
         
         physicsInfo: {
-            density: 10,
+            density: 0.0001,
             fixedRotation: true,
             linearDamping: 8,
-            type: b2Body.b2_kinematicBody
+            type: b2Body.b2_kinematicBody,
+            isSensor : true
         },
 
         body: null,

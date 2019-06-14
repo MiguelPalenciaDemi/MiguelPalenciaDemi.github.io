@@ -41,6 +41,9 @@ function CreateBox (world, x, y, width, height, options)
 
         'linearDamping' : 0.0,
         'angularDamping': 0.0,
+        
+        'isSensor':false,
+        'fixedRotation': false,
 
         'type' : b2Body.b2_dynamicBody
     }, options);
@@ -51,6 +54,7 @@ function CreateBox (world, x, y, width, height, options)
     fix_def.density = options.density;
     fix_def.friction = options.friction;
     fix_def.restitution = options.restitution;
+    fix_def.isSensor = options.isSensor;
 
     // Shape: 2d geometry (circle or polygon)
     fix_def.shape = new b2PolygonShape();
@@ -63,6 +67,7 @@ function CreateBox (world, x, y, width, height, options)
 
     body_def.linearDamping = options.linearDamping;
     body_def.angularDamping = options.angularDamping;
+    body_def.fixedRotation= options.fixedRotation;
 
     body_def.type = options.type; // b2_dynamicBody
     body_def.userData = options.user_data;
@@ -116,7 +121,7 @@ function CreateWorld (ctx, gravity)
     debugDraw.SetLineThickness(1.0);
     debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_jointBit);
 
-   // world.SetDebugDraw(debugDraw);
+    // world.SetDebugDraw(debugDraw);
 
     // create the surface (an static object)
     // floorBody = CreateBox(world, 4, 0.2, 4, 0.5, {type : b2Body.b2_staticBody});
@@ -159,12 +164,20 @@ function OnContactDetected (contact)
         if(a.type =='floor'&& b.type =='player'||
             a.type =='player'&& b.type =='floor')
         {
+            var platform = (a.type =="floor") ? a:b;
+            // console.log(platform);
+            if(platform.height<0.7)
+             respawnX=platform.position.x+platform.width/2;
+
             if(!player.canJump)
             {
+                
                 player.isTop = true;
                 player.canJump=true;
                 console.log("contacto! "+a.type+"con "+b.type);
             }
+
+            
             
             
         }
@@ -191,6 +204,8 @@ function OnContactDetected (contact)
          var ramen = (a.type =="ramen") ? a:b;
             player.score+=10;
             ramen.toDelete=true;
+            ramenSound.currentTime = 0;
+            ramenSound.play();//Reproducimos el sonido
          console.log("contacto! "+a.type+"con "+b.type);
         
     }

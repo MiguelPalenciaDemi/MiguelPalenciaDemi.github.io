@@ -8,14 +8,101 @@
 
 body {
     background-color: gray;
+
+
 }
 
 #container {
-    margin: 20px auto;
-    width: 800px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   /* margin: 20px auto;*/
+/*    width: 800px;*/
 }
 
 #my_canvas {
+    position: relative;
     background-color: black;
+    height: 100%;
+    width: 100%;
 }
 
+.Maintitle
+{
+    height: 100%;
+    width: 100%;
+    background-color: #444444;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:"Permanent Marker";
+    color: white;
+}
+
+.title
+{
+    
+    font-size: 240px;
+    
+}
+
+.play
+{
+    cursor: pointer;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.tutorial_container
+{
+     font-family:"Permanent Marker";
+    color: white;
+
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imageTutorial
+{
+    background-image: url("../images/menu1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    height: 80%;
+    width: 80%;
+
+    margin: 2%;
+
+}
+
+.tutorial
+{
+    background-color: #444444;
+    height: 90%;
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid white;
+    border-radius: 50px;
+}

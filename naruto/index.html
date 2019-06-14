@@ -9,6 +9,7 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/Box2D.js"></script>
     <script src="js/physics_aux.js"></script>
+    <script src="media/level.json"></script>
     <script src="js/code.js"></script>
     <script src="js/input.js"></script>
     <script src="js/player.js"></script>
@@ -16,18 +17,39 @@
     <script src="js/bg.js"></script>
     <script src="js/camera.js"></script>
     <script src="js/obstacle.js"></script>
+    <script src="js/limit.js"></script>
     <script src="js/background.js"></script>
     <script src="js/goal.js"></script>
     <script src="js/ramen.js"></script>
+
 </head>
+<audio id="sound_jump" src="media/jump.ogg" style="display: none;"></audio>
+<audio id="sound_end" src="media/end.mp3" style="display: none;"></audio>
+<audio id="sound_ramen" src="media/ramen.mp3" style="display: none;"></audio>
+<audio id="sound_yoh" src="media/yoh.mp3" style="display: none;"></audio>
+<audio id="sound_theme" src="media/naruto.ogg" style="display: none;"></audio>
 
 <body onload="Init();">
     <div id="container">
+        <div class="Maintitle">
+            <div class="title">NARUTO</div>
+            <div class="play" id="play">Play!</div>
+        </div>
+        <div class="tutorial_container">
+            <div class="tutorial">
+                <div class="imageTutorial" style=""></div>
+                <div class="description">
+                    PC Controls:<br>
+                    -<span style="font-weight: bold;"> Space:</span> Jump<br>
+                    -<span style="font-weight: bold;"> Arrow Left/Right :</span>   Move Left/Right<br>
+                </div>
+                <div class="play" id="play2">Play!</div>
+            </div>
+        </div>
         <canvas id="my_canvas" width="800" height="480"></canvas>
         
-        <audio id="sound_theme" src="media/naruto.mp3" style="display: none;" loop="true"></audio>
-         <audio id="sound_jump" src="media/jump.ogg" style="display: none;"></audio>
-         <audio id="sound_end" src="media/end.mp3" style="display: none;"></audio>
+        
+         
     </div>
 </body>
 
