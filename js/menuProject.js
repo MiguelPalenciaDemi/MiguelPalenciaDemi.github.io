@@ -8,14 +8,15 @@ function Init ()
 	
 	$('.navMenuContainer').fadeIn(1000).css("display","flex");
 	$('.topic').fadeIn(1000).css("display","flex");
-
+	SliderHTML();
+	startSlider();
 	SetMenuActions();	
 }
 
 //Creamos el slider utilizando las imágenes que se encuentran dentro del array
 function SliderHTML()
 {
-	var listDefaultImgs=[  "media/phill.jpg","media/choco.png","media/marine.jpg","media/slender.jpg","media/way.png"];
+	var listDefaultImgs=[  "media/Relight1.jpg","media/Relight2.jpg"];
 	var currentDefImage=0;
 	var totalDefImgs = listDefaultImgs.length;
 	this.numImages = listDefaultImgs.length;
@@ -28,8 +29,6 @@ function SliderHTML()
 		{
 			newHTML+='left:0%;';
 		}
-		else
-			newHTML+='left:-100%;';
 		newHTML += '"><div class="imgSlider"  style="background-image:url('+listDefaultImgs[currentDefImage]+');">';
 	
 		newHTML+='</div></div>';
@@ -39,7 +38,8 @@ function SliderHTML()
 
 	}
 
-	$(".slider").html(newHTML);
+	$("#slider").html(newHTML);
+
 
 };
 

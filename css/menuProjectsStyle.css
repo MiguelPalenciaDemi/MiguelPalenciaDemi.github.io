@@ -74,19 +74,27 @@ div::-webkit-scrollbar-thumb
 	flex-wrap: wrap;
 
 }
-
-.slider
+.title
 {
-	height: 600px;
-	width: 100%;
-	background-color: #62B3FF;
 
-	display: flex;
-	overflow-x:hidden;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+    height: 40%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    background-size: contain;
 }
+
+.pitch
+{
+
+	font-size: 30px;
+	text-align: center;
+    height: 40%;
+    width: 50%;
+    
+}
+
 
 .topic
 {
@@ -290,15 +298,15 @@ div::-webkit-scrollbar-thumb
 	z-index: -1;
 	overflow: hidden;
 	overflow-x:hidden;
-	width: 50%;
-	height: 100%;
+	width: 100%;
+	height: 80%;
 }
 .imgContainerSlider
 {
-	/*position: absolute;*/
-	height: 100%;
+	position: absolute;
+	height: 80%;
 	width: 100%;
-	left: 0;
+	left: -100%;
 	overflow-x:hidden;
 }
 
@@ -415,7 +423,9 @@ display: flex;
 
 .CurrentProjectContainer
 {
-	height: 600px;
+	height: 100%;
+	width: 100%;
+
     position: relative;
 
 	overflow: hidden;
@@ -454,13 +464,63 @@ display: flex;
 
 
 @keyframes currentProjectSlider {
+    0% { left:0 }
+    30% { left:0 }                                                      
+    50% { left:-100%;}
+    80% { left:-100%;}   
+    100% { left:0 }    
+}
+
+
+.CurrentProjectContainer
+{
+	height: 100%;
+	width: 100%;
+
+    position: relative;
+
+	overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundCurrentProject
+{
+	height: 100%;
+    width: 100%;
+    position: absolute;
+	
+    animation-name: currentProjectSlider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate-reverse;*/
+    animation-timing-function: ease-in-out;
+    /*animation-delay: 2s;*/
+
+
+}
+
+.bgCurrentProject
+{
+	/*position: absolute;*/
+	overflow: hidden;
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@keyframes currentProjectSlider {
     0% { top:0 }
     30% { top:0 }                                                      
     50% { top:-100%;}
     80% { top:-100%;}   
     100% { top:0 }    
 }
-
 
 .navMenuContainer
 {
