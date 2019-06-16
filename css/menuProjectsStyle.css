@@ -438,9 +438,10 @@ display: flex;
 .backgroundCurrentProject
 {
 	height: 100%;
-    width: 100%;
-    position: absolute;
-
+    width: 200%;
+	position: absolute;
+	display: flex;
+	
     animation-name: currentProjectSlider;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -455,7 +456,7 @@ display: flex;
 {
 	/*position: absolute;*/
 	overflow: hidden;
-	width: 100%;
+	width: 50%;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -472,7 +473,7 @@ display: flex;
 }
 
 
-.CurrentProjectContainer
+/*.CurrentProjectContainer
 {
 	height: 100%;
 	width: 100%;
@@ -495,12 +496,12 @@ display: flex;
     animation-name: currentProjectSlider;
     animation-duration: 15s;
     animation-iteration-count: infinite;
-    /*animation-direction: alternate-reverse;*/
+    /*animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
-    /*animation-delay: 2s;*/
+    /*animation-delay: 2s;
 
 
-}
+}*/
 
 .bgCurrentProject
 {
@@ -513,14 +514,14 @@ display: flex;
 }
 
 
-
+/*
 @keyframes currentProjectSlider {
     0% { top:0 }
     30% { top:0 }                                                      
     50% { top:-100%;}
     80% { top:-100%;}   
     100% { top:0 }    
-}
+}*/
 
 .navMenuContainer
 {
