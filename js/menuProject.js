@@ -5,8 +5,11 @@ function Init ()
 {
 	//SliderHTML();
 	//startSlider();
+	$('.body').fadeIn(1000).css("display","flex");
 	
 	$('.navMenuContainer').fadeIn(1000).css("display","flex");
+	$('.page').fadeIn(1000).css("display","flex");
+
 	$('.topic').fadeIn(1000).css("display","flex");
 	SliderHTML();
 	startSlider();

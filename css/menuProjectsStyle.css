@@ -6,6 +6,7 @@ html,body{
 
 body
 {
+	display: none;
 	font-family: 'Khand', sans-serif;
 	overflow-x:hidden;
 	margin:0;
@@ -68,7 +69,7 @@ div::-webkit-scrollbar-thumb
 	height: 100%;
 	position: absolute;
 	width: 100%;
-	display: flex;
+	display: none;
 	/*flex-direction: column;*/
 	justify-content: center;
 	flex-wrap: wrap;
@@ -620,7 +621,11 @@ display: flex;
 /*Tablet*/
 @media (min-width:768px) and (max-width:1025px)
 {
-	
+	.navMenuContainer
+	{
+		width: 60%;
+		height: 70px;
+	}
 	
 	.page
 	{
