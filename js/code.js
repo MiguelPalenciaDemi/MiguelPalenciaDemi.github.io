@@ -13,7 +13,7 @@ function Init ()
 //Creamos el slider utilizando las imágenes que se encuentran dentro del array
 function SliderHTML()
 {
-	var listDefaultImgs=[  "media/phill.jpg","media/choco.png","media/marine.jpg","media/slender.jpg","media/way.png"];
+	var listDefaultImgs=[  "media/phill.jpg","media/marine.jpg","media/slender.jpg","media/way.png"];
 	var currentDefImage=0;
 	var totalDefImgs = listDefaultImgs.length;
 	this.numImages = listDefaultImgs.length;
