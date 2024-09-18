@@ -1,0 +1,1117 @@
+html
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    scroll-behavior: smooth;
+
+    background-color: #1e1e1e;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+
+    font-family: Montserrat;
+}
+
+.start_page
+{
+    width: 100%;
+    height: 100%;
+    padding:5% 5% 0 5%;
+    box-sizing: border-box;
+    background-color: #fafaf8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.white_container
+{
+    position: relative;
+    width: 100%;
+    height: 55%;
+
+    background-color: #fafaf8;
+    border-radius: 2.5vw;
+
+    display: flex;
+    
+}
+
+.black_stipe
+{
+    width: 100%;
+    height: 35%;
+
+    background-color: #1e1e1e;
+    border-radius: 2.5vw;
+
+    display: flex;
+}
+
+.startScrollArrow_container
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.arrowScroll_Image
+{
+    width: 20%;
+    height: 80%;
+    background-image: url(../media/fast-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    animation-name: arrow_fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow_fade {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity:0;}
+  }
+
+.startText_container
+{
+    width: 50%;
+    height: 100%;
+
+    padding-left: 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.title_container
+{
+    width: 100%;
+    height: 40%;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.name_container
+{
+    font-weight: bolder;
+    font-size: 9vh;
+}
+
+.role_container
+{
+    font-weight: bolder;
+    font-size: 5vh;
+    color: #565656;
+}
+
+.ownDescription_contaienr
+{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 2.5vh;
+    width: 100%;
+}
+
+.portrait_container
+{
+    background-image: url(../media/MainPagePic.png);
+    width: 50%;
+    height: 138%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(0, 18%);
+    background-position: center;
+}
+
+.section_page
+{
+    width: 100%;
+    height: auto;
+    
+    padding-left: 12vw;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    color: #fafaf8;
+    
+}
+.aboutMe
+{
+    height: 100vh;
+}
+.section_container
+{
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title
+{
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+}
+
+.section_text
+{
+    font-family: Roboto;
+    font-size: 1.35vw;
+}
+
+.section_subtitle
+{
+    font-size: 3vw;
+    font-weight: bolder;
+    /* margin-bottom: 2vh; */
+    margin-top: 4vh;
+}
+
+.aboutMe_container
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-bottom: 2%;
+}
+
+
+/*#region EDUCATION*/
+
+.education_container
+{
+    height: 70%;
+    width: 100%;
+}
+
+.education_item_container
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.education_item
+{
+    height: auto;
+    width: 100%;
+    
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* box-sizing: border-box; */
+
+    display: flex;
+    flex-direction: row;
+}
+.education_info
+{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.education_img
+{
+    height: auto;
+    width: 50%;
+
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.education_title
+{
+    height: auto;
+    width: 70%;
+
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.education_details
+{
+    height: 30%;
+    width: 70%;
+
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.education_institution
+{
+    height: 100%;
+    width: 50%;
+    font-size: 1.25vw;
+    font-weight: 500;
+
+}
+
+.education_institution a{
+    color: #fafaf8;
+
+}
+
+.education_dates
+{
+    height: 100%;
+    width: 50%;
+    font-size: 1.25vw;
+
+}
+
+.item_reversed
+{
+    flex-direction: row-reverse;
+}
+
+.item_details_reversed
+{
+    flex-direction: row-reverse;
+}
+.separator
+{
+    border-top: 3px solid #fafaf8;
+}
+/*#endregion*/
+
+
+/*#region  MAIN PROJECTS*/
+
+.section_container_2
+{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    padding-left: 10%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main_project_container
+{
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    padding: 2%;
+    padding-left: 10%;
+    box-sizing: border-box;
+
+    background-image: url(../media/Relight2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg_shadow
+{
+    background-image: linear-gradient(to bottom,transparent 20%,#1e1e1e 20%, #1e1e1e);
+}
+.main_project_title
+{
+    height: auto;
+    width: 40%;
+
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.main_project_description
+{
+    height: auto;
+    width: 50%;
+
+    font-family: Roboto;
+    font-size: 1.25vw;
+    font-weight: normal;
+}
+
+
+.main_project_button
+{
+    width: fit-content;
+    block-size: fit-content;
+
+    font-family: Roboto;
+    font-size: 1vw;
+
+
+    border-radius: 25px;
+    border: 2px solid #fafaf8;
+    
+    margin-top: 2%;
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+
+
+/*#endregion*/
+
+/*#region Projects*/
+
+.section_container_3
+{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+
+}
+.project_container
+{
+    height: auto;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.project_item
+{
+    height: auto;
+    width: 45%;
+
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* box-sizing: border-box; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project_item_img
+{
+    height: auto;
+    width: 100%;
+
+    margin-bottom:2% ;
+    
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project_item_title
+{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.project_item_title a
+{
+    color: #fafaf8;
+    
+}
+
+.project_item_description
+{
+    font-size: 1vw;
+    font-family: Roboto;
+    text-align: justify;
+}
+
+.project_item_description a
+{
+    color: #fafaf8;
+    font-weight: 600;
+}
+
+.highlight
+{
+    color: #6ABF69;
+}
+
+/*#endregion*/
+
+
+
+/* Menu's classes */
+
+
+.mobile_start
+{
+    display: none;
+}
+.selected
+{
+    text-decoration: underline;
+}
+
+.web_container
+{
+    width: 100%;
+    background: #1e1e1e;
+}
+
+.menu_container
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: left;
+
+    height: 100vh;
+    width: 12vw;
+
+    background-color: #fafaf8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menu_content
+{
+    height: 80%;
+    width: 100%;
+
+    padding: 10%;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_menu
+{
+    height: auto;
+    width: 100%;
+    margin-bottom: 20%;
+}
+.menu_image
+{
+    height: 15vh;
+    width: 100%;
+    background-image: url("../media/PortraitMenuPic.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+
+.text_menu
+{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.menu_navigation
+{
+    height: auto;
+    width: 100%;
+    
+    font-size: 1.25vw;
+    font-weight: normal;
+    
+    text-align: left;
+    
+}
+
+.button_navigation
+{
+    padding-top: 2vh;  
+    cursor: pointer;  
+}
+
+
+.social_menu
+{
+    height: 10%;
+    width: 100%;
+
+    padding: 10%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_icon
+{
+    width: 25%;
+    height: 100%;
+    margin: 2%;
+
+    background-position: center;
+    background-repeat: no-repeat;   
+    background-size: contain; 
+}
+
+
+
+/* .menu_in
+{
+    animation-name: menu_enter;
+    animation-duration: 0.5s;
+}
+@keyframes menu_enter {
+    0%{transform:translateX(0);}
+    100%{transform:translateX(20vw);}
+    
+
+  }
+.menu_out
+{
+    animation-name: menu_exit;
+    animation-duration: 0.5s;
+}
+@keyframes menu_exit {
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-20vw);    }
+    
+
+  } */
+
+
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (orientation: portrait) and (min-width: 768px )
+{
+    .start_page
+    {
+        display: none;
+    }
+
+    .menu_container
+    {
+        display: none;
+    }
+
+    .section_page
+    {
+        padding-left: 0;
+    }
+
+    .section_title
+    {
+        font-size: 8vw;
+    }
+
+    .section_text
+    {
+        font-size: 3.25vw;
+    }
+    
+    .section_subtitle
+    {
+        font-size: 6vw;
+    }
+
+    .education_title
+    {
+        font-size: 3vw;        
+    }
+
+    .education_details
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        
+    }
+
+    .education_institution
+    {
+        font-size: 2.5vw;
+        padding-bottom: 2%;
+    }
+
+    .education_dates
+    {
+        font-size: 2.5vw;
+    }
+
+    .item_reversed
+    {
+        flex-direction: row-reverse;
+       
+    }
+
+    .item_details_reversed
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main_project_title
+    {        
+        font-size: 5vw;
+    }
+    
+    .main_project_description 
+    {        
+        width: 70%;       
+        font-size: 3.25vw;        
+    } 
+    
+    .main_project_button 
+    {        
+        font-size: 3vw;
+        border-radius: 50px;
+        border: 2px solid #fafaf8;
+        margin-top: 2%;
+        padding: 1.5%;        
+    }
+
+    .project_container 
+    {
+                
+        flex-direction: column;
+    }
+
+    .project_item
+    {        
+        width: 100%;        
+        margin-bottom: 15%;        
+    }
+
+    .project_item_title 
+    {
+        font-size: 5vw;        
+    }
+
+    .project_item_description 
+    {
+        font-size: 3vw;        
+    }
+
+    .mobile_start
+    {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 10%;
+        padding-bottom: 2%;
+
+        box-sizing: border-box;
+        background-color: #fafaf8;
+    }
+
+    .mobile_title
+    {
+        font-size: 8vw;
+        font-weight: bolder;
+    }
+    .mobile_subtitle
+    {
+        font-size: 5vw;
+        font-weight: 600;
+        color: #565656;
+    }
+
+    .mobile_menu
+    {
+        height: 5%;
+        width: 100%;
+
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .mobile_container
+    {
+        height: 5vh;
+        width: 50%;
+
+        display: flex;
+
+        padding: 1%;
+        box-sizing: border-box;
+
+        border-radius: 0 0 0 30px;
+        background-color: #fafaf8;
+    }
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (orientation: portrait) and (max-width: 600px)
+{
+    .start_page
+    {
+        display: none;
+    }
+
+    .menu_container
+    {
+        display: none;
+    }
+
+    .section_page
+    {
+        padding-left: 0;
+    }
+
+    .section_title
+    {
+        font-size: 8vw;
+    }
+
+    .section_text
+    {
+        font-size: 3.25vw;
+    }
+    
+    .section_subtitle
+    {
+        font-size: 6vw;
+    }
+
+    .education_title
+    {
+        font-size: 3vw;        
+    }
+
+    .education_details
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        
+    }
+
+    .education_institution
+    {
+        font-size: 2.5vw;
+        padding-bottom: 2%;
+    }
+
+    .education_dates
+    {
+        font-size: 2.5vw;
+    }
+
+    .item_reversed
+    {
+        flex-direction: row-reverse;
+       
+    }
+
+    .item_details_reversed
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main_project_title
+    {        
+        font-size: 5vw;
+    }
+    
+    .main_project_description 
+    {        
+        width: 70%;       
+        font-size: 3.25vw;        
+    } 
+    
+    .main_project_button 
+    {        
+        font-size: 3vw;
+        border-radius: 50px;
+        border: 2px solid #fafaf8;
+        margin-top: 2%;
+        padding: 1.5%;        
+    }
+
+    .project_container 
+    {
+                
+        flex-direction: column;
+    }
+
+    .project_item
+    {        
+        width: 100%;        
+        margin-bottom: 15%;        
+    }
+
+    .project_item_title 
+    {
+        font-size: 5vw;        
+    }
+
+    .project_item_description 
+    {
+        font-size: 3vw;        
+    }
+
+    .mobile_start
+    {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 10%;
+        padding-bottom: 2%;
+
+        box-sizing: border-box;
+        background-color: #fafaf8;
+    }
+
+    .mobile_title
+    {
+        font-size: 8vw;
+        font-weight: bolder;
+    }
+    .mobile_subtitle
+    {
+        font-size: 5vw;
+        font-weight: 600;
+        color: #565656;
+    }
+
+    .mobile_menu
+    {
+        height: 5%;
+        width: 100%;
+
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .mobile_container
+    {
+        height: 5vh;
+        width: 50%;
+
+        display: flex;
+
+        padding: 1%;
+        box-sizing: border-box;
+
+        border-radius: 0 0 0 30px;
+        background-color: #fafaf8;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: portrait)
+{
+    .start_page
+    {
+        display: none;
+    }
+
+    .menu_container
+    {
+        display: none;
+    }
+
+    .section_page
+    {
+        padding-left: 0;
+    }
+
+    .section_title
+    {
+        font-size: 8vw;
+    }
+
+    .section_text
+    {
+        font-size: 3.25vw;
+    }
+    
+    .section_subtitle
+    {
+        font-size: 6vw;
+    }
+
+    .education_title
+    {
+        font-size: 3vw;        
+    }
+
+    .education_details
+    {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        
+    }
+
+    .education_institution
+    {
+        font-size: 2.5vw;
+        padding-bottom: 2%;
+    }
+
+    .education_dates
+    {
+        font-size: 2.5vw;
+    }
+
+    .item_reversed
+    {
+        flex-direction: row-reverse;
+       
+    }
+
+    .item_details_reversed
+    {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main_project_title
+    {        
+        font-size: 5vw;
+    }
+    
+    .main_project_description 
+    {        
+        width: 70%;       
+        font-size: 3.25vw;        
+    } 
+    
+    .main_project_button 
+    {        
+        font-size: 3vw;
+        border-radius: 50px;
+        border: 2px solid #fafaf8;
+        margin-top: 2%;
+        padding: 1.5%;        
+    }
+
+    .project_container 
+    {
+                
+        flex-direction: column;
+    }
+
+    .project_item
+    {        
+        width: 100%;        
+        margin-bottom: 15%;        
+    }
+
+    .project_item_title 
+    {
+        font-size: 5vw;        
+    }
+
+    .project_item_description 
+    {
+        font-size: 3vw;        
+    }
+
+    .mobile_start
+    {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 10%;
+        padding-bottom: 2%;
+
+        box-sizing: border-box;
+        background-color: #fafaf8;
+    }
+
+    .mobile_title
+    {
+        font-size: 8vw;
+        font-weight: bolder;
+    }
+    .mobile_subtitle
+    {
+        font-size: 5vw;
+        font-weight: 600;
+        color: #565656;
+    }
+
+    .mobile_menu
+    {
+        height: 5%;
+        width: 100%;
+
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .mobile_container
+    {
+        height: 5vh;
+        width: 50%;
+
+        display: flex;
+
+        padding: 1%;
+        box-sizing: border-box;
+
+        border-radius: 0 0 0 30px;
+        background-color: #fafaf8;
+    }
+}
+
+
