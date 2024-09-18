@@ -476,6 +476,11 @@ body
 {
     display: none;
 }
+
+.mobile_menu
+{
+    display: none;
+}
 .selected
 {
     text-decoration: underline;

@@ -4,7 +4,7 @@ var currentScroll = sectionNames[0];
 function setSocial(name, link)
 {
   
-  let social = $("#"+name);
+  let social = $("."+name);
   social.css("background-image", 'url(./media/'+name+'.svg)');
   social.attr('href', link);
 
