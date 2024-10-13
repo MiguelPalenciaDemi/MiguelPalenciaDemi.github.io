@@ -19,6 +19,16 @@ body
     font-family: Montserrat;
 }
 
+.es_text
+{
+   display:block;
+}
+
+.en_text
+{
+    display:none;
+}
+
 .start_page
 {
     width: 100%;

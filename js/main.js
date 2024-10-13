@@ -1,6 +1,8 @@
 const sectionNames = ["start","about","main_projects","projects"];
 var currentScroll = sectionNames[0];
 
+var inSpanish = true;
+
 function setSocial(name, link)
 {
   
@@ -21,6 +23,20 @@ function setNavigation(name)
   });
 }
 
+function ChangeLanguage()
+{
+  inSpanish = !inSpanish;
+  if(inSpanish)
+  {
+    $(".es_text").css("display", "block");
+    $(".en_text").css("display", "none");
+  }
+  else
+  {
+    $(".es_text").css("display", "none");
+    $(".en_text").css("display", "block");
+  }
+}
 
 
 //Mejorar
@@ -64,6 +80,12 @@ function calculateSectionPosition()
 
 $(document).ready(function()
 {  
+
+  $("#change_lang").click(function (e) 
+  {       
+    console.log("hey");
+     ChangeLanguage();   
+  });
 
   setSocial("linkedin","https://www.linkedin.com/in/miguel-palenciadm/");
   setSocial("twitter", "https://x.com/MiguelPalenciaD");  
