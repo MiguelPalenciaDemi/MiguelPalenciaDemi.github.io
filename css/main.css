@@ -567,16 +567,51 @@ body
 }
 
 
-.social_menu
+.bottom_menu
 {
-    height: 10%;
+    height: 15%;
     width: 100%;
 
     padding: 10%;
     box-sizing: border-box;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.language_selector
+{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid #6ABF69;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 1em;
+    color: #6ABF69;
+
+}
+
+.language_selector:hover {
+    filter: drop-shadow(0px 0px 5px #6ABF69);
+}
+
+.language_selector span 
+{
+    cursor: pointer;
+}
+
+
+.social_menu
+{
+    height: 66%;
+    width: 100%;
+    display: flex;
+
 }
 
 .social_icon
