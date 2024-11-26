@@ -390,10 +390,17 @@ body
     
     margin-top: 2%;
     padding: 0.5%;
+    padding-left:3%;
+    padding-right:3%;
+
     box-sizing: border-box;
 }
 
-
+.main_project_button a
+{
+    color: #fafaf8;
+   
+}
 
 /*#endregion*/
 
